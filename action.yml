@@ -8,7 +8,8 @@ runs:
   steps:
     - uses: actions/checkout@v2
 
-    - run: |
+    - shell: bash
+      run: |
         docker login -u  ${{ github.repository_owner }} \
                      -p "${{ github.token }}" \
                          ghcr.io
