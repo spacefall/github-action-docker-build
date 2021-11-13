@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - uses: btmc/github-action-docker-build@main
+    - uses: btmc/github-action-docker-build@v1
 ```
 
 Generates an image on any commit to main branch or any tag.
