@@ -1,6 +1,6 @@
 ## github-action-docker-build
 
-An extremely simple docker image build for your repository, built in order to replace in open source the docker hub integration, which has gone to the payed tier.
+An extremely simple docker image build for your repository, make in order to replace in open source Docker Hub integration, which has gone to the payed tier.
 
 Usage example:
 
@@ -21,3 +21,5 @@ jobs:
 ```
 
 Generates an image on any commit to main branch or any tag.
+
+Also links a built image back to the repository via adding the according LABEL instruction to the dockerfile in process of a build.

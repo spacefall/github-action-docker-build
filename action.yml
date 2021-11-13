@@ -2,7 +2,7 @@ name:
     github-action-docker-build
 
 description:
-    an extremely simple docker image build for your repository
+    an extremely simple docker image auto build tool for your repository
 
 runs:
   using: composite
