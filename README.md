@@ -5,9 +5,9 @@ An extremely simple docker image auto build for your repository, made in order t
 The resulting image is stored in ghcr.io, which is free for open source projects.
 
 
-The `dockerfile` should exist in project root.
+`dockerfile` should exist in project root.
 
-Also links a built image back to the repository via adding the according `LABEL` instruction to the dockerfile in process of a build.
+Also links a built image back to the repository via adding the according `LABEL` instruction to the dockerfile in a process of a build.
 
 
 Usage example (include it in a workflow file, e.g. `.github/workflows/build.yml`):
@@ -28,4 +28,4 @@ jobs:
     - uses: btmc/github-action-docker-build@v1
 ```
 
-Generates an image on any commit to main branch or any tag.
+Generates an image on any commit to the `main` branch or tagged with any tag.
